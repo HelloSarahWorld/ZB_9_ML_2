@@ -23,6 +23,7 @@
 <br>
 <img width="199" alt="image" src="https://user-images.githubusercontent.com/122243187/233988192-e01c3341-1d71-4340-b1ee-ae992fd94d8b.png">
 * 1점, 2점은 부정으로, 4점, 5점은 긍정으로 분류할 경우 긍정과 부정이 각각 50.01%, 49.99%로 약 1:1 비율로 분포
+
 ---
 ## 👓 EDA
 ### 워드 클라우드를 통해 빈출되는 불용어, 유의어 사전 구축
@@ -36,6 +37,7 @@
 * [온라인상 공유되어 있는 기본 불용어 사전](https://raw.githubusercontent.com/yoonkt200/FastCampusDataset/master/korean_stopwords.txt) 활용
 * naver_shopping.txt 데이터에 맞춰 워드클라우드를 통해 평점과 관계없이 빈출되는 불용어(구매, 배송, 생각, 사용, 가격, 제품 등) 추가
 <br>
+
 ---
 ## 🎢 전처리
 ### 불용어를 제거하고 형태소별로 토큰화된 리뷰 데이터 형성
@@ -45,6 +47,7 @@
 #### <관련 파일> naver_shopping_tokenized_review_improved.csv
 * **tokenized1**: 2글자 이상인 명사, 형용사, 동사만 활용
 * **tokenized2**: 전체 형태소 활용
+
 ---
 ## 🪢 모델
 ### 1) DTM vs TFIDF
@@ -56,6 +59,7 @@
 * 데이터 셋이 20만건 이상인 관계로 large data sets에 적합한 saga를 penalty(elasticnet, l1, l2), C(0.01, 0.1, 1, 5, 10), max iter(100, 500, 1000)에 대하여 GridSearch 수행
 * 24시간이 경과하였으나 튜닝이 진전이 없어 parameter의 조합의 경우의 수를 점차 줄여서 GridSearch를 수행한 결과 규제변수 C에 대하여만 간신히 튜닝할 수 있었음
 
+---
 
 ## 🖼️ 최종 모델 및 주요 긍부정 키워드
 ### 1) 최종 모델
