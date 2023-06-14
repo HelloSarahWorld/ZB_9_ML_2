@@ -29,6 +29,7 @@
 ### 워드 클라우드를 통해 빈출되는 불용어, 유의어 사전 구축
 <img width="439" alt="image" src="https://user-images.githubusercontent.com/122243187/233989963-bbd591fb-33e5-46b3-a483-5441b33930d6.png">
 <br>
+
 #### <관련파일 1> review_synonym.txt
 * 유의어(ex: 좋아요, 좋네요, 좋구요, 좋습니다, 조아요 등) 일원화를 위해 유의어 사전 구축
 
